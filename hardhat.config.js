@@ -31,6 +31,12 @@ module.exports = {
       gasPrice: 120000000,
       accounts: [process.env.PRIVATE_KEY]
     },
+    polygonAmoy: {
+      url: 'https://rpc-amoy.polygon.technology/',
+      chainId: 80002,
+      gasPrice: 130000000,
+      accounts: [process.env.PRIVATE_KEY_POLYGON_AMOY]
+    },
   },
   namedAccounts: {
     deployer: {

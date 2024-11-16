@@ -29,13 +29,13 @@ contract MemoraNFTV2 is ERC721URIStorage, Ownable {
         uint256 triggerTimestamp;
         uint256 balance;
         string uri;
-        uint256 farcasterID;
+        string farcasterID;
     }
 
     struct MinterData {
         uint256 tokenId;
         address minter;
-        uint256 fid;
+        string fid;
     }
 
     mapping(uint256 => TokenInfo) public tokenInfo;
@@ -67,7 +67,7 @@ contract MemoraNFTV2 is ERC721URIStorage, Ownable {
         uint256 choice,
         string memory prompt,
         string memory tokenURI,
-        uint256 farcasterID
+        string memory farcasterID
     ) public returns (uint256) {
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();

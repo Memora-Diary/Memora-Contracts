@@ -1,8 +1,57 @@
-# Memora's NFT Smart Contract
+# 🌟 Memora Platform
 
-The **MemoraNFTV2** smart contract is an advanced ERC721 token built on the Rootstock blockchain using Solidity. It allows the minting, transfer, and inheritance of non-fungible tokens (NFTs) with added functionality for fund management. The contract integrates with the OpenZeppelin library for security and ERC721 token standards.
+Memora is a comprehensive blockchain-powered platform that helps users preserve and manage their digital legacy through smart contracts, AI-driven analysis, and secure data storage. The platform combines advanced NFT-based inheritance mechanisms with intelligent backend services.
 
-## Features
+## 🏗 Architecture Overview
+
+### Smart Contracts (Rootstock)
+- **MemoraNFTV2**: Advanced ERC721 token with inheritance and fund management capabilities
+- **Buffer System**: Configurable time-delay mechanism for inheritance claims
+- **Multi-Action Support**: Account management, closure, and fund transfer capabilities
+
+### Backend Services
+- **AI Analysis**: OpenAI-powered content evaluation and trigger condition analysis
+- **Push Notifications**: Real-time event notifications via Push Protocol
+- **Secure Storage**: Encrypted note storage using Nillion Network
+- **Telegram Integration**: Interactive diary entries and user engagement
+
+## 🔑 Key Features
+
+### 1. Smart Contract Capabilities
+- NFT minting with customizable inheritance parameters
+- Judge-triggered inheritance mechanism
+- Configurable buffer period for security
+- Native token (BTC) management within NFTs
+- Multiple account actions (Manage/Close/Transfer)
+
+### 2. Backend Services
+- AI-driven content analysis
+- Personalized diary question generation
+- Real-time notifications
+- Secure communication channels
+- Comprehensive user management
+
+## 🛠 Technical Stack
+
+### Blockchain Layer
+- Solidity 0.8.20
+- OpenZeppelin Contracts
+- Hardhat Development Environment
+- Ethers.js
+
+### Backend Infrastructure
+- Node.js with Express
+- Sequelize ORM
+- OpenAI Integration
+- Push Protocol
+- Telegram Bot API
+- Nillion Network
+
+## 📋 Smart Contract Details
+
+### Core Functions
+
+#### NFT Management
 
 - **Minting NFTs**: Users can mint NFTs with custom URIs and assign a judge, heir, and action for account management.
 - **Inheritance Mechanism**: After a judge declares a "trigger" and a buffer period passes, the heir can inherit the NFT or perform actions like managing accounts, closing accounts, or transferring funds.
